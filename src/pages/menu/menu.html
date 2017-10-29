@@ -1,0 +1,27 @@
+
+<ion-menu [content]='content'>
+
+  <ion-header>
+      <ion-navbar>
+        <ion-title>menu</ion-title>
+      </ion-navbar>
+  </ion-header>
+
+
+  <ion-content >
+    <ion-list>
+        <button ion-item menuClose *ngFor='let p of pages' (click)='openPage(p)'>
+            <ion-icon item-start [name]='p.icon' [color] = 'isActive(p)'></ion-icon>
+            {{p.Title}}
+        </button>
+    </ion-list>
+  </ion-content>
+  
+</ion-menu>
+
+<ion-nav [root]='rootPage' #content></ion-nav>
+
+
+<!--
+  Developed by Valentin Buisson (1106329)
+-->

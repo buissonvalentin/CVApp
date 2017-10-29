@@ -5,21 +5,39 @@ import { SplashScreen } from '@ionic-native/splash-screen';
 import { StatusBar } from '@ionic-native/status-bar';
 
 import { MyApp } from './app.component';
-import { HomePage } from '../pages/home/home';
+import { LoginPage } from '../pages/login/login';
+import { MenuPage } from '../pages/menu/menu';
+
+import { AngularFireAuthModule} from 'angularfire2/auth';
+import { AngularFireModule } from 'angularfire2';
+
+var config = {
+  apiKey: "AIzaSyDG0wnVEHTE9_uRoIOB8MCXRewga2OX2DU",
+  authDomain: "cvapp-fa687.firebaseapp.com",
+  databaseURL: "https://cvapp-fa687.firebaseio.com",
+  projectId: "project-226352828985",
+  storageBucket: "",
+  messagingSenderId: "226352828985"
+};
+
 
 @NgModule({
   declarations: [
     MyApp,
-    HomePage
+    LoginPage
   ],
   imports: [
     BrowserModule,
-    IonicModule.forRoot(MyApp)
+    IonicModule.forRoot(MyApp),
+    AngularFireAuthModule,
+    AngularFireModule,
+    AngularFireModule.initializeApp(config)
+
   ],
   bootstrap: [IonicApp],
   entryComponents: [
     MyApp,
-    HomePage
+    LoginPage,
   ],
   providers: [
     StatusBar,
