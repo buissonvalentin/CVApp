@@ -1,6 +1,6 @@
 import { Component, ViewChild } from '@angular/core';
 import { IonicPage, NavController, NavParams, Nav } from 'ionic-angular';
-
+import { LoginPage } from '../login/login';
 /**
  * Generated class for the MenuPage page.
  *
@@ -65,6 +65,10 @@ rootPage = 'TabsPage';
       return 'primary';
     }
     return;
+  }
+
+  logOut(){
+    this.navCtrl.setRoot(LoginPage);
   }
 
 }

@@ -13,24 +13,24 @@
 </ion-header>
 
 
-<ion-content padding>
+<ion-content padding >
 
-  <ion-item>
-    <ion-label floating color='primary' >Email</ion-label>
+  <ion-item class="label">
+    <ion-label floating  >Email</ion-label>
     <ion-input [(ngModel)] = 'credentials.email' type="email" ></ion-input>
   </ion-item>
 
-  <ion-item>
-    <ion-label floating color = 'primary' >Password</ion-label>
-    <ion-input [(ngModel)] = 'credentials.password' type="password" ></ion-input>
+  <ion-item class="label">
+    <ion-label floating   >Password</ion-label>
+    <ion-input  [(ngModel)] = 'credentials.password' type="password" ></ion-input>
   </ion-item>
 
-  <button ion-button block color= 'primary'  (click)='login()'>Login</button>
-  <button ion-button block color = 'secondary' (click)='goToRegister()'>Create an Account</button>
+  <button ion-button block color= 'secondary' style="color : #222"  (click)='login()'>Login</button>
+  <button ion-button block color = 'dark' outline (click)='goToRegister()'>Create an Account</button>
 
   <h2 style="text-align : center"  > Or </h2>
 
-  <button ion-button block color='danger' (click)='loginGoogle()'> Login with Google </button>
+  <button ion-button block outline color='danger' style="margin-top : 150px;" (click)='loginGoogle()'> Login with Google </button>
 
 </ion-content>
 
