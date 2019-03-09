@@ -1,6 +1,9 @@
-This is a starter template for [Ionic](http://ionicframework.com/docs/) projects.
+# Description
+
+This is my CV(2017) as an app done using Ionic 3
 
 ## How to use this template
+This is a starter template for [Ionic](http://ionicframework.com/docs/) projects.
 
 *This template does not work on its own*. The shared files for each starter are found in the [ionic2-app-base repo](https://github.com/ionic-team/ionic2-app-base).
 
